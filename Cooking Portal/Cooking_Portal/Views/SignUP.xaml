@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cooking_Portal.Views.SignUP">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="firstname" Placeholder="First Name" PlaceholderColor="Brown" FontSize="Large" TextColor="Chocolate"/>
+            <Entry x:Name="lastname" Placeholder="Last Name" PlaceholderColor="Brown" FontSize="Large" TextColor="Chocolate"/>
+            <Entry x:Name="username" Placeholder="Username" PlaceholderColor="Brown" FontSize="Large" TextColor="Chocolate"/>
+            <Entry x:Name="password" Placeholder="Password" PlaceholderColor="Brown" FontSize="Large" TextColor="Chocolate" IsPassword="True"/>
+            <Entry x:Name="repassword" Placeholder="Re type Password" PlaceholderColor="Brown" FontSize="Large" TextColor="Chocolate" IsPassword="True"/>
+            <Button x:Name="signup" Text="Sign UP" BackgroundColor="CadetBlue" BorderRadius="5" FontSize="Large" TextColor="AliceBlue" FontAttributes="Bold" Clicked="signup_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

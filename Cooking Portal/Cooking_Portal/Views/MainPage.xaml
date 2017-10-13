@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Cooking_Portal"
+             x:Class="Cooking_Portal.MainPage">
+    <RelativeLayout>
+        <Image Source="bg.jpg" Opacity="0.5"
+                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+      
+            <StackLayout RelativeLayout.WidthConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Height}" HorizontalOptions="Center" VerticalOptions="Center" Spacing="20" >
+            
+            <Label Text="Login to your account" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="40"  TextColor="CadetBlue"/>
+            <Entry x:Name="username" Placeholder="Username" PlaceholderColor="Brown" FontSize="Large" TextColor="Chocolate"/>
+            <Entry x:Name="password" Placeholder="Password" PlaceholderColor="Brown" FontSize="Large" TextColor="Chocolate" IsPassword="True"/>
+            <Button x:Name="login" Text="Login" BackgroundColor="CadetBlue" BorderRadius="5" FontSize="Large" TextColor="AliceBlue" FontAttributes="Bold" Clicked="login_Clicked"/>
+            <Button x:Name="newUser" Opacity="0.3" Text="New User" BorderRadius="20" InputTransparent="True" Clicked="newUser_Clicked"/>
+
+
+
+        </StackLayout>
+
+    </RelativeLayout>
+	
+
+</ContentPage>
